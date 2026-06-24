@@ -7,7 +7,9 @@ $(document).ready(function () {
     $('#toggle-theme').on('click', function () {
 
         $('body').toggleClass('dark-mode');
+        $('nav').toggleClass('dark-mode');
         $('mi-navbar').toggleClass('dark-mode');
+        $('navbar.navbar-expand-lg').toggleClass('dark-mode');
         $('navbar').toggleClass('dark-mode');
         $('footer').toggleClass('dark-mode');
         $('header').toggleClass('dark-mode');
