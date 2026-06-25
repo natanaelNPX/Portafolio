@@ -12,12 +12,16 @@ nav {
     z-index: 1000;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background: #292a29;
     color: #333;
     line-height: 1.6;
     padding-bottom: 50px;
+    background-image: url(../img/Outerwilds2.gif);
+    background-size: 75%;
+    background-position: center;
 }
 
 section {
@@ -37,6 +41,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    opacity: 0.9;
 }
 
 header {
@@ -47,12 +52,15 @@ header {
 
 }
 
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 25px;
     padding-bottom: 10px;
+    font-weight: bold;
+    size: 3rem;
 }
 
 nav ul li a {
@@ -61,6 +69,8 @@ nav ul li a {
     font-weight: bold;
     padding: 8px 12px;
     transition: 0.3s;
+    font-weight: bold;
+    size: 3rem;
 }
 
 nav ul li a:hover {
@@ -191,7 +201,7 @@ footer {
     flex-wrap: nowrap; 
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-image: url(../../img/grupo4/Outerwilds2.gif);
+    background-image: url(../img/Outerwilds2.gif);
     background-size: 75%;
     background-position: center;
 }
@@ -236,6 +246,7 @@ footer {
     height: 720px;
     border-radius: 12px;
     overflow: visible;
+    
 }
 
 
@@ -299,8 +310,13 @@ nav.dark-mode {
 }
 
 body.dark-mode {
-    background: #000803;
-    color: #011308;
+    background: #292929;
+    color: #03120a;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../img/Outerwilds2.gif);
+    background-size: 75%;
+    background-position: center;
 }
 
 footer.dark-mode {
@@ -311,10 +327,27 @@ footer.dark-mode {
 header.dark-mode {
     background: #032207;
     color: #d40000;
+    opacity: 0.9;
 }
 
 nav ul li a.dark-mode {
     color: #1c1616;
+}
+
+nav.dark-mode ul li a:hover {
+    background: #0e5f28;
+    border-radius: 5px;
+}
+
+
+nav.dark-mode ul li a {
+    color: rgb(220, 234, 219);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+    font-weight: bold;
+    size: 3rem;
 }
 
 button#toggle-theme {
